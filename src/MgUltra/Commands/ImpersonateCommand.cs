@@ -4,7 +4,7 @@ using DSharpPlus.Commands;
 using DSharpPlus.Commands.Processors.SlashCommands;
 using DSharpPlus.Entities;
 
-namespace MachineGirl.Commands;
+namespace MgUltra.Commands;
 
 public sealed class ImpersonateCommand
 {

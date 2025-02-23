@@ -1,6 +1,13 @@
 ﻿services:
-  machinegirl:
-    image: machinegirl
+  wolframalpha:
+    image: mgultra
     build:
       context: .
-      dockerfile: MachineGirl/Dockerfile
+      dockerfile: src/DiscordClient/Dockerfile
+    container_name: mgultra
+    env_file:
+      - .env
+    shm_size: 256mb
+    restart: unless-stopped
+    depends_on:
+      - credentials

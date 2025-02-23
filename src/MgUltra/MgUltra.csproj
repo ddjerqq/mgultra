@@ -8,11 +8,11 @@
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Content Include="..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
-    </ItemGroup>
+<!--    <ItemGroup>-->
+<!--      <Content Include="./../../.dockerignore">-->
+<!--        <Link>.dockerignore</Link>-->
+<!--      </Content>-->
+<!--    </ItemGroup>-->
 
     <ItemGroup>
       <PackageReference Include="dotenv.net" Version="3.2.1" />

@@ -4,9 +4,9 @@ using DSharpPlus.Commands.Processors.SlashCommands.ArgumentModifiers;
 using DSharpPlus.Commands.Trees;
 using DSharpPlus.Entities;
 
-namespace MachineGirl.Commands;
+namespace MgUltra.Commands;
 
-public sealed class PingCommand
+public sealed class AutoCompleteCommands
 {
     [Command("ping")]
     public static async ValueTask ExecuteAsync(SlashCommandContext context) =>

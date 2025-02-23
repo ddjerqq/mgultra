@@ -2,15 +2,10 @@
 using dotenv.net;
 using DSharpPlus.Commands;
 using DSharpPlus.Commands.Processors.SlashCommands;
-using DSharpPlus.Commands.Processors.TextCommands;
-using DSharpPlus.Commands.Processors.TextCommands.Parsing;
 using DSharpPlus.Entities;
 using DSharpPlus.Extensions;
-using DSharpPlus.Interactivity;
 using DSharpPlus.Interactivity.Extensions;
-using MachineGirl.Commands;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Serilog;
 
 DotEnv.Fluent().WithProbeForEnv(6).Load();

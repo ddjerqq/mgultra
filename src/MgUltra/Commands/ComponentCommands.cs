@@ -1,10 +1,9 @@
-﻿using DSharpPlus;
-using DSharpPlus.Commands;
+﻿using DSharpPlus.Commands;
 using DSharpPlus.Commands.Processors.SlashCommands;
 using DSharpPlus.Entities;
 using DSharpPlus.Interactivity.Extensions;
 
-namespace MachineGirl.Commands;
+namespace MgUltra.Commands;
 
 public sealed class ComponentCommands
 {
