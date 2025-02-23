@@ -1,0 +1,6 @@
+﻿services:
+  machinegirl:
+    image: machinegirl
+    build:
+      context: .
+      dockerfile: MachineGirl/Dockerfile
