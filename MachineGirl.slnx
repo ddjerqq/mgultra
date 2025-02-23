@@ -1,12 +1,12 @@
 ﻿<Solution>
   <Folder Name="/Solution Items/">
     <File Path="compose.yaml" />
-    <File Path="Dockerfile" />
-    <File Path=".dockerignore" />
     <File Path=".gitignore" />
     <File Path="readme.md" />
+    <File Path=".env" />
   </Folder>
   <Folder Name="/src/">
-    <Project Path="src\MgUltra\MgUltra.csproj" Type="Classic C#" />
+    <Project Path="src/IpScanner/IpScanner.csproj" Type="Classic C#" />
+    <Project Path="src/MgUltra/MgUltra.csproj" Type="Classic C#" />
   </Folder>
 </Solution>

@@ -5,6 +5,7 @@ using DSharpPlus.Commands.Processors.SlashCommands;
 using DSharpPlus.Entities;
 using DSharpPlus.Extensions;
 using DSharpPlus.Interactivity.Extensions;
+using MgUltra.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 
@@ -19,9 +20,10 @@ var debugGuildId = ulong.Parse("DISCORD__TEST_GUILD_ID".FromEnvRequired());
 
 var services = new ServiceCollection();
 
+services.AddScoped<GreeterService>();
+
 services.AddSerilog();
 services.AddLogging(loggingBuilder => loggingBuilder.AddSerilog(Log.Logger, true));
-
 services.AddInteractivityExtension();
 services.AddDiscordClient(discordToken, SlashCommandProcessor.RequiredIntents);
 services.AddCommandsExtension((sp, ext) =>
@@ -32,6 +34,6 @@ services.AddCommandsExtension((sp, ext) =>
 var sp = services.BuildServiceProvider();
 var discordClient = sp.GetRequiredService<DiscordClient>();
 
-var status = new DiscordActivity("Dance in the fire", DiscordActivityType.Custom);
+var status = new DiscordActivity("Machine girl", DiscordActivityType.ListeningTo);
 await discordClient.ConnectAsync(status, DiscordUserStatus.Online);
 await Task.Delay(-1);

@@ -1,9 +1,22 @@
 ﻿services:
-  wolframalpha:
+  ipscanner:
+    image: ipscanner
+    build:
+      context: .
+      dockerfile: src/IpScanner/Dockerfile
+    container_name: ipscanner
+    env_file:
+      - .env
+    shm_size: 256mb
+    restart: unless-stopped
+    depends_on:
+      - credentials
+
+  mgultra:
     image: mgultra
     build:
       context: .
-      dockerfile: src/DiscordClient/Dockerfile
+      dockerfile: src/MgUltra/Dockerfile
     container_name: mgultra
     env_file:
       - .env
