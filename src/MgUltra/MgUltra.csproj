@@ -9,9 +9,9 @@
 
     <ItemGroup>
         <PackageReference Include="dotenv.net" Version="3.2.1"/>
-        <PackageReference Include="DSharpPlus" Version="5.0.0-nightly-02459"/>
+        <PackageReference Include="DSharpPlus" Version="5.0.0-nightly-02485" />
         <PackageReference Include="DSharpPlus.Commands" Version="5.0.0-nightly-02459"/>
-        <PackageReference Include="DSharpPlus.Interactivity" Version="5.0.0-nightly-02459"/>
+        <PackageReference Include="DSharpPlus.Interactivity" Version="5.0.0-nightly-02485" />
         <PackageReference Include="Grpc.AspNetCore" Version="2.67.0"/>
         <PackageReference Include="Grpc.Tools" Version="2.69.0">
             <PrivateAssets>all</PrivateAssets>
