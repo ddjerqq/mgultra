@@ -1,9 +1,12 @@
 ﻿<Solution>
-  <Folder Name="/Solution Items/">
+  <Folder Name="/SolutionItems/">
     <File Path="compose.yaml" />
     <File Path=".gitignore" />
     <File Path="readme.md" />
     <File Path=".env" />
+  </Folder>
+  <Folder Name="/Protos">
+    <File Path="Protos/greet.proto"/>
   </Folder>
   <Folder Name="/src/">
     <Project Path="src/IpScanner/IpScanner.csproj" Type="Classic C#" />
